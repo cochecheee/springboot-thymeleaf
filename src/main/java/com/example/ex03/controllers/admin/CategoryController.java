@@ -34,7 +34,7 @@ public class CategoryController {
 		List<Category> listcate = cateService.findAll();
 		// chuyển dữ liệu từ model vào biến categories để truyền lên view
 		model.addAttribute("categories",listcate);
-		return "admin/category/list";
+		return "admin/categories/list";
 	}
 	
 	@GetMapping("add")
